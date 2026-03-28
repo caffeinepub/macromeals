@@ -425,7 +425,7 @@ function UPIPaymentModal({
               <div className="flex flex-col items-center">
                 <div className="bg-white border-2 border-gray-100 rounded-2xl p-3 shadow-sm">
                   <img
-                    src="/assets/generated/upi-qr-new.dim_300x300.png"
+                    src={`https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(`upi://pay?pa=7337054254@freecharge&pn=MacroMeals&am=${amount}&cu=INR`)}`}
                     alt="UPI QR Code"
                     width={176}
                     height={176}
