@@ -48,7 +48,8 @@ import {
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useState } from "react";
 import { toast } from "sonner";
-const aboutImage = "/assets/generated/about-image.dim_700x500.jpg";
+const aboutImage = "/assets/generated/chef-photo.dim_700x500.jpg";
+const kitchenImage = "/assets/generated/kitchen-photo.dim_700x500.jpg";
 const beefMuscleBowl = "/assets/generated/beef-muscle-bowl.dim_600x400.jpg";
 const eggWhiteOmelette = "/assets/generated/egg-white-omelette.dim_600x400.jpg";
 const grilledChickenBowl =
@@ -1004,24 +1005,38 @@ function About() {
           </div>
 
           <div className="reveal reveal-delay-2">
-            <div className="relative">
-              <img
-                src={aboutImage}
-                alt="Fresh healthy meals prepared by MacroMeals chefs"
-                className="rounded-3xl w-full object-cover shadow-card"
-                style={{ aspectRatio: "7/5" }}
-              />
-              <div className="absolute -bottom-5 -left-5 bg-white rounded-2xl shadow-card p-4 flex items-center gap-3">
-                <div
-                  className="w-12 h-12 rounded-xl flex items-center justify-center"
-                  style={{ backgroundColor: "oklch(0.47 0.13 152)" }}
-                >
-                  <CheckCircle className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <p className="font-black text-gray-900 text-sm">
-                    FSSAI Certified
+            <div className="grid grid-cols-2 gap-4">
+              <div className="relative">
+                <img
+                  src={aboutImage}
+                  alt="MacroMeals head chef"
+                  className="rounded-3xl w-full object-cover shadow-card"
+                  style={{ aspectRatio: "3/4" }}
+                />
+                <div className="absolute bottom-3 left-3 right-3 bg-white/90 backdrop-blur rounded-xl px-3 py-2 text-center">
+                  <p className="font-black text-gray-900 text-xs">Head Chef</p>
+                  <p className="text-xs text-gray-500">
+                    Certified Nutritionist
                   </p>
+                </div>
+              </div>
+              <div className="relative">
+                <img
+                  src={kitchenImage}
+                  alt="MacroMeals cloud kitchen"
+                  className="rounded-3xl w-full object-cover shadow-card"
+                  style={{ aspectRatio: "3/4" }}
+                />
+                <div className="absolute bottom-3 left-3 right-3 bg-white/90 backdrop-blur rounded-xl px-3 py-2 text-center">
+                  <div className="flex items-center justify-center gap-1">
+                    <CheckCircle
+                      className="w-3 h-3"
+                      style={{ color: "oklch(0.47 0.13 152)" }}
+                    />
+                    <p className="font-black text-gray-900 text-xs">
+                      FSSAI Certified
+                    </p>
+                  </div>
                   <p className="text-xs text-gray-500">
                     Safe & Hygienic Kitchen
                   </p>
