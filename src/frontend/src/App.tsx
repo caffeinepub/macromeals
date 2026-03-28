@@ -54,7 +54,7 @@ const beefMuscleBowl = "/assets/generated/beef-muscle-bowl.dim_600x400.jpg";
 const eggWhiteOmelette = "/assets/generated/egg-white-omelette.dim_600x400.jpg";
 const grilledChickenBowl =
   "/assets/generated/grilled-chicken-bowl.dim_600x400.jpg";
-const heroBg = "/assets/generated/hero-bg.dim_1600x900.jpg";
+const heroBg = "/assets/generated/hero-bg-new.dim_1600x900.jpg";
 const paneerProteinBowl =
   "/assets/generated/paneer-protein-bowl.dim_600x400.jpg";
 const quinoaSalad = "/assets/generated/quinoa-salad.dim_600x400.jpg";
