@@ -425,7 +425,7 @@ function UPIPaymentModal({
               <div className="flex flex-col items-center">
                 <div className="bg-white border-2 border-gray-100 rounded-2xl p-3 shadow-sm">
                   <img
-                    src={`https://chart.googleapis.com/chart?cht=qr&chs=176x176&chl=${encodeURIComponent(`upi://pay?pa=${upiId}&pn=MacroMeals&am=${amount}&cu=INR`)}&choe=UTF-8`}
+                    src="/assets/generated/upi-qr-new.dim_300x300.png"
                     alt="UPI QR Code"
                     width={176}
                     height={176}
